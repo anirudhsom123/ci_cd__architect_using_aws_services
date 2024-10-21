@@ -4,12 +4,19 @@ this project provides knowledge related to how ci-cd works in aws using aws serv
 ## Aim : To set a test-environment to check our index.html file
 
 ### Steps
-# 1.
-upload code to codecommit
-# 2.
-create a codebuild operation by adding buildspec.yml file
-# 3.
-use codedeploy to deploy ur code to ec2 instance 
-# 4.
+#### Step-1.
+Upload code to codecommit repository
+#### Step-2.
+Create a codebuild operation by adding buildspec.yml file
+#### Step-3.
+Use codedeploy to deploy ur code to ec2 instance 
+#### Step-4.
 This whole process can be automated using the codepipeline
+#### Conclusion
+This codepipline will check for updates in codecommit and automatically start the integration and deployment of the code
+
+# Note-
+codedeploy agent should is installed manually on ec2 entance to sure that there is no problem related to the version compatibilty issue (file used agent.txt)
+
+
 
